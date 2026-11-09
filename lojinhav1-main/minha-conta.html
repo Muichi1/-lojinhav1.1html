@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Nakita :D</title>
+    
+    <!-- Link do seu CSS principal -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <!-- A tag <style> agora está correta, DENTRO do <head> -->
+</head>
+
+<body>
+    <!-- Início -->
+
+     <div class="novoMenu">
+        <!-- Inicío Container -->
+        <div class="container">
+
+            <!-- Inicío Navegação -->
+            <div class="navbar">
+
+                <div class="logo">
+                    <a href="index.html" title="">
+                        <img src="assets/img/logo.jpg" alt="Nakita" width="125px">
+                    </a>
+                </div>
+
+                <!-- Início Menu Navegação -->
+                <nav>
+                    <ul id="MenuItens">
+                        <li><a href="index.html" class="link-produto">Início</a></li>
+                        <li><a href="produtos.html" class="link-produto">Produtos</a></li>
+                        <li><a href="sobre.html" class="link-produto">Sobre</a></li>
+                        <li><a href="contato.html" class="link-produto">Contato</a></li>
+                        <li><a href="minha-conta.html" class="link-produto">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <!-- Fim Menu Navegação --> 
+                <a href="carrinho.html" title="">
+                <img src="assets/img/carrinho.png" alt="Carrinho" width="30px" height="30px">
+                </a>
+                <img src="assets/img/menu.png" alt="Abrir menu" class="menu" onclick="menuce()">
+
+            </div>
+            <!-- Fim Navegação -->
+
+        </div>
+        <!-- Fim Container -->
+    </div>
+        <!-- Fim Container -->
+
+<!-- Início Minha Conta -->
+        <div class="minha-conta">
+            <div class="container">
+                <div class="linha">
+
+                    <div class="col-2">
+                        <img src="assets/img/banner-1.png" alt="" width="100%">
+                    </div>
+
+                    <div class="col-2">
+                        <div class="formulario">
+                            <div class="btn-form">
+                                <span onclick="mostrarEntrar()">Entrar</span>
+                                <span onclick="mostrarCadastro()">Cadastro</span>
+                                <hr id="Indicador">
+                            </div>
+
+                            <p>Login e cadastro estão indisponíveis nesta versão estática.</p>
+                            <form id="EntrarPainel" onsubmit="event.preventDefault(); alert('Login indisponível nesta versão estática.');">
+                                <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                                <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                                <button type="submit" name="senEntrar" class="btn">Entrar</button>
+                                <a href="esqueci-senha.html" title="">Esqueci minha senha</a>
+                            </form>
+
+                            <form id="CadastroSite" onsubmit="event.preventDefault(); alert('Cadastro indisponível nesta versão estática.');">
+                                <input type="text" name="nome" id="" placeholder="Nome completo">
+                                <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                                <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                                <button type="submit" name="sendCad" class="btn">Cadastre-se</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Fim Minha Conta -->
+
+        <!-- Inicío Rodape -->
+         <footer class="rodape"> 
+            <div class="container">
+                <div class="linha-neon"></div>
+                <div class="linha-neon"></div>
+                <div class="linha">
+                    <div class="rodape-col-1">
+                        <h3>Baixe nosso App</h3>
+                        <p>Baixe nosso App para Android e iOS.</p>
+                        <div class="app-logo">
+                            <br><a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Visitar Google Play"><img src="assets/img/google.png" alt="Play Store"></a>
+                            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" aria-label="Visitar App Store"><img src="assets/img/apple.png" alt="App Store"></a>
+                        </div>
+                    </div>
+                    <div class="rodape-col-2">
+                        <h3>Links Úteis</h3>
+                        <ul>
+                            <li><a href="cupons.html">Cupons</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                            <li><a href="contato.html">Contatos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br><div class="linha-neon"></div>
+                <div class="direitos">
+                    &#169; Loja Nakita. Todos os direitos reservados.
+                </div>
+
+            </div>
+         </footer>
+        <!-- Fim Rodape -->
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/login.js"></script>
+    
+</body>
+</html>

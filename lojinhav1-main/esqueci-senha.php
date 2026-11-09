@@ -1,0 +1,44 @@
+
+<?php require_once('header.php')?>
+
+<!-- Início Esqueci Senha -->
+<div class="minha-conta">
+    <div class="container">
+        <div class="linha">
+
+            <div class="col-2">
+                <img src="assets/img/banner-5.png" alt="" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="formulario">
+
+                    <div class="btn-form">
+                        <span class="titulo-recuperar">Recuperar senha</span>
+                    </div>
+
+                    <form action="" method="post" id="RecuperarSenha">
+
+                        <p>Informe seu e-mail cadastrado para recuperar sua senha.</p>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+
+                        <button type="submit" name="recuperarSenha" class="btn">Enviar</button>
+                        <a href="minha-conta.php">Voltar para entrar</a>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Fim Esqueci Senha -->
+
+<?php require_once('footer.php')?>
